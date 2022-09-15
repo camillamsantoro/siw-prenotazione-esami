@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>CENTRO DI FORMAZIONE</title>
+<link rel="stylesheet" th:href="@{/css/my-style.css}" />
+<link rel="stylesheet" th:href="@{/css/home.css}" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  
+  
+  
+	<header th:replace="fragments/base.html :: intestazione"></header>
+	<div>
+		<div>
+		
+			<div class="text-box">
+				<h1>SERVIZIO PRENOTAZIONI SEGRETERIA</h>
+				<h2>
+					<a class="hero-btn" th:href="@{/register}">Aggiungi Allievo</a>
+				</h2>
+				<h2>
+					<a class="hero-btn" th:href="@{/admin/esameForm}">Aggiungi esame</a>
+				</h2>
+				<h2>
+					<a class="hero-btn" th:href="@{/admin/allievo/newCertificazione}">Aggiungi
+						certificazioni</a>
+				</h2>
+				<h2>
+					<a class="hero-btn" th:href="@{/admin/editCertificazione}">Modifica
+						certificazioni</a>
+				</h2>
+				<h2>
+					<a class="hero-btn" th:href="@{/admin/removeCertificazione}">Rimuovi
+						certificazioni</a>
+				</h2>
+                <div class="button-box">
+				<div> 
+					<a class="hero-btn"   th:href="@{/listaUtenti}">Allievo</a>
+				</div>
+				<div>
+					<a class="hero-btn"  th:href="@{/certificazioni}">Certificazione</a>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+
+</html>

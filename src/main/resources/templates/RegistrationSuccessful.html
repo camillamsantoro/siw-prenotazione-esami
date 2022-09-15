@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+ 
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>  
+	    <meta charset="ISO-8859-1" />
+	    <title>CENTRO DI FORMAZIONE</title>
+		<link rel="stylesheet" th:href="@{css/my-style.css}"/>
+		<link rel="stylesheet" th:href="@{css/home.css}"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head> 
+	 
+	<body> 
+		<header th:replace="fragments/base.html :: intestazione"></header>
+		<div class="text-box">
+			<h3>La registrazione e' stata effettuata con successo!</h3>
+			<h3 class="hero-btn"><a th:href="@{/login}">Effettua l'accesso</a></h3>
+		</div>
+	</body>
+
+</html>

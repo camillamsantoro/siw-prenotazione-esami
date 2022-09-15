@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>CENTRO DI FORMAZIONE</title>
+<link rel="stylesheet" th:href="@{css/my-style.css}" />
+<link rel="stylesheet" th:href="@{css/home.css}" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header th:replace="fragments/base.html :: intestazione"></header>
+	<div class="text-box">
+		<div>
+			<a>
+				<div class="text-item">
+					<div id="bottoni">
+						<div class="hero-btn">
+							<a th:href="@{/certificazioni}">Le nostre certificazioni</a>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+	</div>
+</body>
+
+</html>
